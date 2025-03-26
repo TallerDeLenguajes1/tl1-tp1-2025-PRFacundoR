@@ -3,6 +3,8 @@
 int numCuadrado(int num1);
 void numCuadrado2(int *num2);
 
+void Invertir(int*a,int*b);
+void ordenar(int *c, int *d);
 
 int main(int argc, char const *argv[])
 {
@@ -34,4 +36,24 @@ return num2;
 void numCuadrado2(int *num2){
 
     *(num2)*=*num2;
+}
+
+
+void Invertir(int*a,int*b){
+
+    int *aux=*b;
+    *b=*a;
+    *a=*aux;
+
+
+}
+void ordenar(int *a, int *b){
+
+    if (*a>*b)
+    {
+    int *aux=*b;
+    *b=*a;
+    *a=*aux;
+    }
+    
 }
