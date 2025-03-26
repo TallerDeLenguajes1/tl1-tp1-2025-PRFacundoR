@@ -51,9 +51,9 @@ void numCuadrado2(int *num2){
 
 void Invertir(int*a,int*b){
 
-    int *aux=*b;
+    int aux=*b;
     *b=*a;
-    *a=*aux;
+    *a=aux;
 
 
 }
@@ -61,9 +61,9 @@ void ordenar(int *a, int *b){
 
     if (*a>*b)
     {
-    int *aux=*b;
+    int aux=*b;
     *b=*a;
-    *a=*aux;
+    *a=aux;
     }
     
 }
