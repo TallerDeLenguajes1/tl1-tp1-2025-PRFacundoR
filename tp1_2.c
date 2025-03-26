@@ -3,6 +3,8 @@
 int numCuadrado(int num1);
 void numCuadrado2(int *num2);
 
+void mostrarContMemYValor(int *num1);
+
 void Invertir(int*a,int*b);
 void ordenar(int *a, int *b);
 
@@ -28,11 +30,13 @@ int main(int argc, char const *argv[])
     numCuadrado2(&num2);
     printf("El cuadrado del segundo numero es: %d",*punt);
 
-     Invertir(&a, &b);
+    mostrarContMemYValor(&num1); 
+    
+    Invertir(&a, &b);
     printf("Los valores, se invirtieron, a esta en b , %d y b en a, %d ",b,a);
 
-     ordenar(&a, &b);
-     printf("Los valores, se ordenaron, a es el mas chico , %d y b es el mas grande, %d ",a,b);
+    ordenar(&a, &b);
+    printf("Los valores, se ordenaron, a es el mas chico , %d y b es el mas grande, %d ",a,b);
 
     return 0;
 }
@@ -66,4 +70,9 @@ void ordenar(int *a, int *b){
     *a=aux;
     }
     
+}
+
+void mostrarContMemYValor(int *num1){
+
+    printf("Dirección de la variable: %p, Contenido: %d\n", num1, *num1);
 }
