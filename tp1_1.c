@@ -13,6 +13,8 @@ int main()
     printf("La direccion de memoria del puntero es %p\n",&punt);
     printf("El tamaño de la variables usando sizeof(), es %d",memoria);
     
-
+ 
+    
     return 0;
+    
 }
